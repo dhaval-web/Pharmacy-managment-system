@@ -39,7 +39,7 @@ class managment extends Controller
              if(isset($request->catagory)&&$request->catagory!=null){
                 $catagory=$catagory->where('catagory','LIKE','%'.$request->catagory.'%');
              }
-            $catagory=$catagory->paginate(2);
+            $catagory=$catagory->paginate(10);
             $data=compact('catagory');
             return view('catagory_view')->with($data,$catagory);
     }
@@ -76,7 +76,7 @@ class managment extends Controller
         if(isset($request->medicine_name)&&$request->medicine_name!=null){
             $medicine=$medicine->where('medicine_name','LIKE','%'.$request->medicine_name.'%');
         }
-        $medicine=$medicine->paginate(2);
+        $medicine=$medicine->paginate(6);
         $data=compact('medicine');
         return view('medicine_view')->with($data,$medicine);
     }
@@ -147,7 +147,7 @@ class managment extends Controller
         if(isset($request->medicine_name)&&$request->medicine_name!=null){
             $stock=$stock->where('medicine_name','LIKE','%'.$request->medicine_name.'%');
         }
-        $stock=$stock->paginate(2);
+        $stock=$stock->paginate(5);
         $data=compact('stock');
         return view('stock_view')->with($data,$stock);
     }

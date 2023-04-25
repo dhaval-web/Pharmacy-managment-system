@@ -26,7 +26,7 @@
         <!-- Nav Links -->
         <ul class="hidden md:flex px-4 mx-auto font-semibold font-heading space-x-12">
           <li><a class="hover:text-gray-200" href="catagory_view">Catagory</a></li>
-          <li><a class="hover:text-gray-200" href="medicine_view">Madicine</a></li>
+          <li><a class="hover:text-gray-200" href="medicine_view">Medicine</a></li>
           <li><a class="hover:text-gray-200" href="stock_view">Stock</a></li>
           <li><a class="hover:text-gray-200" href="member_view">Users</a></li>
         </ul>
